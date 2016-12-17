@@ -1,0 +1,67 @@
+
+
+
+- Base : Nơi chứa tất cả những mẫu CSS có sẵn mặc định cho dự án.
+    + file Reset.css =>
+    + Typography.css =>  thiết lập các style chung cho việc hiển thị các thuộc tính như  background-color; @font-family-base; @line-height-base; màu sắc chung của liên kết @link-color...   hiệu ứng khi hover... xem ví dụ trong file scaffolding.less của botstrap 3
+    + Normalize.css => cải thiện việc render đối với các trình duyệt https://github.com/necolas/normalize.css/blob/master/normalize.css
+     ví dụ kiểu chữ typography {h1;h2;h3...; p; a; i; b; ....; font-1; font-2; font-3;...}
+
+
+- helpers : Chứa những tiện ích như function - biến mà sự dụng đâu đó trong toàn bộ dự án..
+    + _variables : Chứa các biến trong sass mà có thẻ sử dụng bất kỳ đâu trong dự án
+    + _mixins.scss : Chứa các _mixins trong sass
+    + _functions.scss : Chứa các function trong sass
+    ...
+
+
+- Component : Chứa các css cho các chức năng như :  slishow ; giỏ hàng cart; hình ảnh thumbail; ...v.v tùy thuộc chức năng nhỏ mà có thể dùng chung đâu đó
+  + _media.scss => Css cho các file media
+  + _carousel.scss => Css cho slishow
+  + _thumbnails.scss => Css cho hình ảnh
+  + _cart.scss  => Css cho giỏ hàng
+  ....
+
+
+- Layout hoặc partials : Trong này chứa các file có nhiệm vụ định dạng bố cục cho những phần chính của trang web
+   + _header.scss => định dạng bố cục các phần block css cho header
+   + _navbar.scss => định dạng bố cục các phần block navbar điều hướng hoặc menu
+   + _sidebar.scss  =>  định dạng bố cục các phần block chuyển hướng sidebar tham khảo thêm hoặc quảng cáo
+   + _footer.scss =>  định dạng bố cục các phần block layout footer
+   ...
+
+- Page : Mỗi trang sẽ có các css page riêng nếu các thành phần có chức năng dùng chung ta có thể tạo ra component 1 thành phần dùng chung
+sau đó sử dụng kèm vào các page cụ thể để kết hợp các đặc tính riêng và chung cho từng page cụ thể.
+
+    + _home.scss
+    + _contact.scss
+    ...
+
+- Themes : Nếu như website của bạn có 2-3 chủ để hãy đưa các layout và page vào các theme  name tương ứng.
+      + themes-name-1 : Các css bố cục của theme 1
+      + themes-name-2: Các css bố cục của theme 2
+      ....
+
+- Vendor : Chứa các thư viện plugin css và js  khác.
+      + jquery => thư mục chứa thư viện jquey
+      + botstrap => thư viện chứa botstrap
+
+
+
+Tóm lại :
+
+Nhiều file có phải  tốt => Việc tạo ra bao nhiêu thư mục và file ko quan trọng quan trọng là quản lý tốt.
+
+Main.scss  == Một tập tin để cai trị tất cả + Một tập tin để tìm thấy chúng + Một tập tin có thể mang lại main.css là nó
++ Và sass gulp hợp nhất nó.
+
+
+
+
+
+
+
+
+
+
+
