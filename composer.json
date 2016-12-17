@@ -1,0 +1,11 @@
+{
+    "name": "fooder/sass",
+    "description": "sass fooder start",
+    "authors": [
+        {
+            "name": "hoanghiep",
+            "email": "thandonguocmo2020@gmail.com"
+        }
+    ],
+    "require": {}
+}
